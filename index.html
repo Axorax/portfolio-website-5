@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hey there! I'm Axorax. I love coding and tech.">
+    <meta name="keywords" content="axorax, portfolio">
+    <meta name="author" content="Axorax">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Axorax - Portfolio website">
+    <meta property="og:description" content="Hey there! I'm Axorax. I love coding and tech.">
+    <meta property="og:url" content="https://axorax.github.io/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Axorax - Portfolio website">
+    <meta name="twitter:description" content="Hey there! I'm Axorax. I love coding and tech.">
+    <title>Axorax</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="fcc">
+      <li>
+        <a href="#landing">
+          <button>Home</button>
+        </a>
+      </li>
+      <li>
+        <a href="#skills">
+          <button>Skills</button>
+        </a>
+      </li>
+      <li>
+        <a href="#projects">
+          <button>Projects</button>
+        </a>
+      </li>
+      <li>
+        <a href="#contact">
+          <button>Contact</button>
+        </a>
+      </li>
+    </nav>
+
+    <section id="landing" class="fcc">
+      <div class="wiper"></div>
+      <div id="meteor-rain"></div>
+      <div class="main">
+        <h2>Hey! I'm Axorax.</h2>
+        <h1>Fullstack developer</h1>
+        <h2>4+ years of web dev. Also a YouTuber. Trying to learn game dev. Sometimes, I also make desktop apps. My real name is Aayan.</h2>
+      </div>
+    </section>
+
+    <section id="info" class="fcc">
+      <div class="main" data-anim="scale">
+        <h1>I'm 15 years old</h1>
+        <h2>Based in Bangladesh 🌏</h2>
+        <p>I love making videos. Check out one of my videos ↓</p>
+        <iframe src="https://www.youtube.com/embed/lo6Ee_k_zG0" title="Turning Figma into a GUI maker for Python" frameborder="0" allow="accelerometer; autoplay; clipboard-write;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section id="skills" class="fcc">
+      <div class="main" data-anim="scale" data-margin="1700">
+        <p>Stuff I know</p>
+        <ul class="fcc"></ul>
+      </div>
+
+      <canvas id="skills-globe" width="500" height="500" data-anim="scale" data-margin="1700"></canvas>
+
+      <div id="tags"><ul></ul></div>
+    </section>
+
+    <section id="projects">
+      <h1 data-anim="scale">My projects</h1>
+
+      <div class="main">
+        <div data-anim="scale" data-margin="1700" style="background: url(&quot;./images/projects/axile.png&quot;)">
+          <a href="https://axorax.github.io/axile-blog" target="_blank">
+            <div>
+              <div>
+                <p>Axile Blog</p>
+                <ul>
+                  <li style="background: #ff4f28; color: #fff">HTML</li>
+                  <li style="background: #282cff; color: #fff">CSS</li>
+                  <li style="background: #fff828; color: #000">JavaScript</li>
+                </ul>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div data-anim="scale" data-margin="1700" style="background: url(&quot;./images/projects/kamipass.png&quot;)">
+          <a href="https://github.com/Axorax/kamipass" target="_blank">
+            <div>
+              <div>
+                <p>Kamipass</p>
+                <ul>
+                  <li style="background: #ff9b28; color: #fff">Tauri</li>
+                  <li style="background: #ff4828; color: #fff">Rust</li>
+                  <li style="background: #fff828; color: #000">JavaScript</li>
+                  <li style="background: #ff4f28; color: #fff">HTML</li>
+                  <li style="background: #282cff; color: #fff">CSS</li>
+                </ul>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div data-anim="scale" data-margin="1700" style="background: url(&quot;./images/projects/livewinsize.png&quot;)">
+          <a href="https://github.com/axorax/livewinsize" target="_blank">
+            <div>
+              <div>
+                <p>Livewinsize</p>
+                <ul>
+                  <li style="background: #ff9b28; color: #fff">Tauri</li>
+                  <li style="background: #ff4828; color: #fff">Rust</li>
+                  <li style="background: #28b0ff; color: #fff">Less</li>
+                  <li style="background: #a9ff28; color: #000">Pug</li>
+                  <li style="background: #28edff; color: #000">Coffeescript</li>
+                </ul>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div data-anim="scale" data-margin="1700" style="background: url(&quot;./images/projects/tkforge.png&quot;)">
+          <a href="https://github.com/Axorax/tkforge" target="_blank">
+            <div>
+              <div>
+                <p>TkForge (Figma design -> Python GUI)</p>
+                <ul>
+                  <li style="background: #2869ff; color: #fff">Python</li>
+                  <li style="background: #db28ff; color: #fff">Figma</li>
+                </ul>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="more">
+        <a href="https://github.com/Axorax?tab=repositories" target="_blank"><button data-anim="scale">View more on my GitHub</button></a>
+      </div>
+    </section>
+
+    <section id="question" class="fcc">
+      <h1 data-anim="scale">Want to play a game?</h1>
+      <button onclick="toggleGameModal()" data-anim="scale">Yeah, sure!</button>
+    </section>
+
+    <dialog>I have been expecting you. Let's play :)</dialog>
+
+    <section id="game">
+      <div class="initial fcc active">
+        <div>
+          <h2>Game rules</h2>
+          <p>After you click play, some boxes will appear on the screen. You must select the correct one. If you fail, you have to subscribe to me on YouTube (link below). If you win, you get the ultimate prize of nothing!</p>
+          <div class="note">Press the button below to start the game.</div>
+          <button onclick="startGame()" class="start">Play Game</button>
+
+          <div class="bottom">
+            <button onclick="toggleGameModal()" class="outline">Exit Game</button>
+            <a href="https://www.youtube.com/c/axorax?sub_confirmation=1" target="_blank" class="youtube"><button>YouTube</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="main">
+        <h1>Select One</h1>
+
+        <div class="boxes fcc"></div>
+
+        <div class="bottom">
+          <button onclick="exitGame()" class="outline">Exit Game</button>
+          <a href="https://www.youtube.com/c/axorax?sub_confirmation=1" target="_blank" class="youtube"><button>YouTube</button></a>
+        </div>
+      </div>
+
+      <div class="result fcc">
+        <div>
+          <h1></h1>
+          <h3></h3>
+
+          <div class="bottom">
+            <button onclick="toggleGameModal()" class="outline">Exit Game</button>
+            <a href="https://www.youtube.com/c/axorax?sub_confirmation=1" target="_blank" class="youtube"><button>YouTube</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="fcc">
+      <h1 data-anim="scale">Contact me!</h1>
+
+      <div class="group fcc" data-anim="scale">
+        <div class="box">
+          <div class="icon">💻</div>
+          <div class="title">Work & Business</div>
+          <p>Hiring, sponsorships, and collaborating.</p>
+          <button class="outline" onclick="copyEmail(this)">Email: axoraxmail@gmail.com</button>
+        </div>
+
+        <div class="box">
+          <div class="icon">💬</div>
+          <div class="title">Casual + Donate</div>
+          <p>Follow me, have a casual talk or anything else.</p>
+          <div class="group fcc">
+            <a href="https://www.patreon.com/axorax" target="_blank"><button class="outline">Patreon</button></a>
+            <a href="https://discord.com/invite/nKUFghjXQu" target="_blank"><button class="primary">Discord</button></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="icon">🔗</div>
+          <div class="title">List of all socials</div>
+          <p>Every single social media platform I am on.</p>
+          <div class="group">
+            <a href="https://github.com/Axorax/socials" target="_blank"><button class="outline">View List</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>Made with ❤️ by Axorax.</footer>
+
+    <script src="./d.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
